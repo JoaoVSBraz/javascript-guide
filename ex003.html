@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template String</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html{
+      font-size: 62.5%;
+    }
+
+    body{
+      height: 100vh;
+      background-color: aqua;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Olá, mundo!</h1>
+
+  <script>
+
+    var n1 = window.prompt('Digite um número: ')
+    var n2 = window.prompt('Digite outro número: ')
+
+    // Number() realiza uma conversão de tipo. Alterando o tipo da variável de string para number 
+    var soma = Number(n1) + Number(n2)
+    window.alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+    /*
+      O resultado do alert acima será uma concatenação pois o método prompt retorna uma string. A solução para isso foi usar a conversão de tipo.
+      (string + string) para concatenação
+      (number + number) para adição
+    */
+  
+    // Também há como converter para tipos específicos de dados.
+    // Number.parseInt(var) para converter pra inteiro
+    // Number.parseFloat(var) para converter pra ponto flutuante
+    //String(var) ou var.toString() para converter para string
+
+
+  </script>
+</body>
+</html>
