@@ -10,15 +10,19 @@
   <script>
     
     var nome = window.prompt('Qual é seu nome? ')
+    
     document.write(`Seu nome tem ${nome.length} letras<br />`)
     document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
     document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br />`)
     
     // O método prompt retorna uma string. Portanto, será necessário converter a variável salario posteriormente
     var salario = window.prompt('Digite seu salario: ')
-    salario = Number(salario)
-    document.write(`Seu salário é ${salario}`)
 
+    salario = Number(salario)
+
+    resultado = salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+    document.write(`Seu salário é ${resultado}`)
   </script>
 </body>
 </html>
