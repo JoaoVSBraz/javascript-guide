@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mais Conversões</title>
+</head>
+<body>
+  <script>
+    
+    var nome = window.prompt('Qual é seu nome? ')
+    document.write(`Seu nome tem ${nome.length} letras<br />`)
+    document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br/>`)
+    document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br />`)
+    
+    // O método prompt retorna uma string. Portanto, será necessário converter a variável salario posteriormente
+    var salario = window.prompt('Digite seu salario: ')
+    salario = Number(salario)
+    document.write(`Seu salário é ${salario}`)
+
+  </script>
+</body>
+</html>
