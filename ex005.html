@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiros Passos com DOM</title>
+  <style>
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      background-color: #ff6600;
+      color: white;
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Iniciando os estudos do DOM</h1>
+  <p>Primeiro parágrafo</p>
+  <p id="paragrafo">Segundo parágrafo</p>
+  <p name="terceiro">Terceiro parágrafo</p>
+  <p class="quarto">Quarto parágrafo</p>
+  <p id="quinto">Quinto parágrafo</p>
+
+  <script>
+    // Seleção de elemento por tag
+    var p1 = window.document.getElementsByTagName('p')[0]
+    window.document.write('<br>' + 'Selecionando o primeiro parágrafo: ' + p1.innerText)
+
+    // Seleção de elemento por ID
+    var p2 = window.document.getElementById('paragrafo')
+    window.document.write('<br>' + 'Selecionando o segundo parágrafo: ' + p2.innerText)
+
+    // Seleção de elemento por nome
+
+    // O método getElementsByName retorna um array (NodeList ou HtmlCollection). Dessa forma, primeiro é necessário acessar a posição [0] e em seguida o atributo pretendido. 
+    var p3 = window.document.getElementsByName('terceiro')
+    window.document.write('<br>' + 'Selecionando o terceiro parágrafo: ' + p3[0].innerText)
+
+    // Seleção de elemento por classe
+
+    // O método getElementsByClassName retorna um array (HtmlCollection). Dessa forma, primeiro é necessário acessar a posição [0] e em seguida o atributo pretendido.
+    var p4 = window.document.getElementsByClassName('quarto')
+    window.document.write('<br>' + 'Selecionando o quarto parágrafo: ' + p4[0].innerText)
+
+    // Seleção de elemento por Seletor
+    var p5 = window.document.querySelector('p#quinto')
+    window.document.write('<br>' + 'Selecionando o quinto parágrafo: ' + p5.innerText)
+    
+  </script>
+</body>
+</html>

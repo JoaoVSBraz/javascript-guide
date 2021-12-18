@@ -77,3 +77,23 @@ Pré-incremento
 1. Aritméticos
 2. Relacionais
 3. Lógicos
+
+## DOM (Document Object Model)
+
+O Document Object Model é a estrutura que representa os elementos de um documento HTML ou XML. Ele é uma estrutura de dados hierárquica que segue o modelo de árvore. Dessa forma, os elementos são dispostos acima ou abaixo de outros elementos.
+
+### Seleção de Elementos
+
+A seleção de elementos no DOM pode ser feita por:
+
+- Tag
+    - getElementsByTagName()
+- ID
+    - getElementById()
+- Nome
+    - getElementsByName()
+- Classe
+    - getElementsByClassName()
+- Seletor
+    - querySelector()
+    - querySelectorAll()
