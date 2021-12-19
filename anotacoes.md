@@ -97,3 +97,25 @@ A seleção de elementos no DOM pode ser feita por:
 - Seletor
     - querySelector()
     - querySelectorAll()
+
+Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
+
+- ex005
+- ex006
+- ex007
+
+### Eventos DOM
+
+Eventos DOM são ações que visam alterar comportamentos numa página web a fim de torná-la dinâmica - propósito do Javascript. Vejamos alguns eventos relacionados as ações de clique.
+
+- click
+- mouseenter
+- mouseout
+
+### Ouvinte de Eventos (Event Listener)
+
+O Event Listener é um método utilizado para adicionar um bloco de código que ficará "escutando" quando determinado evento for acionado.
+
+Você pode verificar o uso do event listener nos seguintes exercícios:
+
+- ex006
