@@ -103,6 +103,8 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex005
 - ex006
 - ex007
+- ex010
+- ex011
 
 ### Eventos DOM
 
@@ -119,3 +121,19 @@ O Event Listener é um método utilizado para adicionar um bloco de código que 
 Você pode verificar o uso do event listener nos seguintes exercícios:
 
 - ex006
+
+## Condições
+
+Condições são estruturas lógicas que nos permitem controlar o fluxo de um programa. Uma condição pode ser simples - possuindo apenas uma condição - ou composta - possuindo mais de uma condição.
+
+### Estruturas Condicionais no Javascript
+
+- if/else
+- switch
+
+Você pode verificar o uso de condições nos seguintes exercícios:
+
+- ex008
+- ex009
+- ex010
+- ex011
