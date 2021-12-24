@@ -124,7 +124,7 @@ Você pode verificar o uso do event listener nos seguintes exercícios:
 
 ## Condições
 
-Condições são estruturas lógicas que nos permitem controlar o fluxo de um programa. Uma condição pode ser simples - possuindo apenas if - ou composta - possuindo mais if's e else's.
+Condições são estruturas lógicas que nos permitem controlar o fluxo de um programa. Uma condição pode ser simples - possuindo apenas if - composta - possuindo mais if's e else's - ou múltipla - testando valores específicos com switch.
 
 ### Estruturas Condicionais no Javascript
 
@@ -137,7 +137,7 @@ Condições são estruturas lógicas que nos permitem controlar o fluxo de um pr
 
 ```js
 if(true) {
-    bloco de código a ser executado;
+    bloco de código a ser executado
 }
 ```
 
@@ -145,11 +145,47 @@ if(true) {
 
 ```js
 if(true) {
-    bloco de código a ser executado;
+    bloco de código a ser executado
 } else {
-    bloco de código a ser executado;
+    bloco de código a ser executado
 }
 ```
+
+> Outra forma de definir condições compostas é utilizando a combinação dos comandos else + if. Veja o exemplo logo abaixo.
+
+```js
+if(false){
+    bloco de código a ser executado
+} else if (false) {
+    bloco de código a ser executado
+} else if (true) {
+    bloco de código a ser executado
+} else {
+    bloco de código a ser executado
+}
+```
+
+- Condição múltipla
+
+```js
+switch(expressão) {
+    case 0:
+        bloco de código a ser executado
+        break
+    case 1:
+        bloco de código a ser executado
+        break
+    case 2:
+        bloco de código a ser executado
+        break
+    default:
+        bloco de código a ser executado
+}
+```
+
+> A condição múltipla feita com o comando switch testa a existência de valores específicos e que já tenhamos conhecimento.
+>
+> Um comando que não deve ser esquecido de forma alguma é o comando **break**. É ele quem encerra o fluxo do programa. Caso seja esquecido, os comandos seguintes também serão executados.
 
 Você pode verificar o uso de condições nos seguintes exercícios:
 
@@ -159,3 +195,4 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex011
 - ex012
 - ex013
+- ex014
