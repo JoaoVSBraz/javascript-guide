@@ -17,6 +17,16 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.212);
 }
 
+div {
+    text-align: center;
+}
+
+#img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
 footer {
     color: #fff;
     font-style: italic;
