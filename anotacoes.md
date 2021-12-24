@@ -124,12 +124,32 @@ Você pode verificar o uso do event listener nos seguintes exercícios:
 
 ## Condições
 
-Condições são estruturas lógicas que nos permitem controlar o fluxo de um programa. Uma condição pode ser simples - possuindo apenas uma condição - ou composta - possuindo mais de uma condição.
+Condições são estruturas lógicas que nos permitem controlar o fluxo de um programa. Uma condição pode ser simples - possuindo apenas if - ou composta - possuindo mais if's e else's.
 
 ### Estruturas Condicionais no Javascript
 
 - if/else
 - switch
+
+### Exemplos
+
+- Condição simples
+
+```js
+if(true) {
+    bloco de código a ser executado;
+}
+```
+
+- Condição composta
+
+```js
+if(true) {
+    bloco de código a ser executado;
+} else {
+    bloco de código a ser executado;
+}
+```
 
 Você pode verificar o uso de condições nos seguintes exercícios:
 
@@ -137,3 +157,5 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex009
 - ex010
 - ex011
+- ex012
+- ex013
