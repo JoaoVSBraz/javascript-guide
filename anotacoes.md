@@ -105,6 +105,8 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex007
 - ex010
 - ex011
+- ex015
+- ex016
 
 ### Eventos DOM
 
@@ -114,9 +116,22 @@ Eventos DOM são ações que visam alterar comportamentos numa página web a fim
 - mouseenter
 - mouseout
 
+Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
+
+- ex006
+- ex007
+- ex010
+- ex011
+- ex015
+- ex016
+
 ### Ouvinte de Eventos (Event Listener)
 
 O Event Listener é um método utilizado para adicionar um bloco de código que ficará "escutando" quando determinado evento for acionado.
+
+```
+a.addEventListener('click', clicar)
+```
 
 Você pode verificar o uso do event listener nos seguintes exercícios:
 
@@ -196,3 +211,5 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex012
 - ex013
 - ex014
+- ex015
+- ex016
