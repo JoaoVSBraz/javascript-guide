@@ -107,6 +107,7 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex011
 - ex015
 - ex016
+- ex018
 
 ### Eventos DOM
 
@@ -116,7 +117,7 @@ Eventos DOM são ações que visam alterar comportamentos numa página web a fim
 - mouseenter
 - mouseout
 
-Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
+Você pode verificar o uso de eventos nos seguintes exercícios:
 
 - ex006
 - ex007
@@ -124,6 +125,7 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex011
 - ex015
 - ex016
+- ex018
 
 ### Ouvinte de Eventos (Event Listener)
 
@@ -213,3 +215,22 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex014
 - ex015
 - ex016
+- ex018
+
+## Repetições
+
+Em programação uma repetição é um bloco de código que se repete enquanto uma condição for verdadeira. As repetições são conhecidas como estruturas de repetição, laços de repetição ou iteração, isto é, todas referem-se a mesma coisa: repetição.
+
+### Estruturas de Repetição no Javacript
+
+- While
+> Estrutura de repetição com teste lógico no início
+- Do While
+> Estrutura de repetição com teste lógico no final
+- For
+> Estrutura de repetição com variável de controle
+
+Você pode verificar o uso de estruturas de repetição nos seguintes exercícios:
+
+- ex017
+- ex018
