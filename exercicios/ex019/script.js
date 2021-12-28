@@ -6,6 +6,7 @@ function tabuada() {
     if (numero.value.length == 0) {
         alert('ERRO: Digite um número')
     }else {
+        resultado.innerHTML = ''
         for(var i = 1; i <= 10; i++) {
             var res = tabuada * i
             resultado.innerHTML += `${tabuada} x ${i} = ${res}<br />`
