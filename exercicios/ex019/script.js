@@ -3,7 +3,7 @@ function tabuada() {
     var resultado = window.document.getElementById('resultado')
     var tabuada = Number(numero.value)
     
-    if (tabuada == undefined || tabuada == null) {
+    if (numero.value.length == 0) {
         alert('ERRO: Digite um número')
     }else {
         for(var i = 1; i <= 10; i++) {
