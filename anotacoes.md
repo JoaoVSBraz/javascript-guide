@@ -293,3 +293,26 @@ Você pode verificar o uso de estruturas de repetição nos seguintes exercício
 - ex018
 - ex019
 - ex020
+
+## Funções
+
+Funções são ações executadas assim que são chamadas ou em decorrência de algum evento. Há quatro pontos principais que permeiam quase toda função: **chamada,** **parâmetro**, **ação** e **retorno**.
+
+```js
+function name(param) {
+    let action = param + 1
+    return action
+}
+
+let consequence = name(param)
+```
+
+> A **chamada** corresponde à última linha do código acima, onde foi atribuida para a variável consequence.
+
+> O **parâmetro** corresponde ao valor que é especificado dentro dos parênteses.
+
+> A **ação** corresponde à execução daquilo pelo qual a função foi criada. No exemplo acima, realizar a soma do parâmetro informado e 1.
+
+> O **retorno** corresponde ao resultado após a execução da função. Dessa forma, o retorno da função exemplo acima foi a soma realizada durante a **ação**.
+
+### Função Recursiva
