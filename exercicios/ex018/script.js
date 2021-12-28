@@ -10,6 +10,9 @@ function contagem() {
 
     if (inputInicio.value.length == 0 || inputFim.value.length == 0 || inputPasso.value.length == 0) {
         alert('[ERRO] Digite um número')
+        
+    } else if (passo == 0) {
+        alert('ERRO: Passo deve ser maior que 0')
     } else if (inicio < fim) {
         for( inicio ; inicio <= fim ; inicio += passo ) {
             resultado.innerHTML += ` ${inicio} `
