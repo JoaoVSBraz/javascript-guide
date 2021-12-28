@@ -78,6 +78,60 @@ Pré-incremento
 2. Relacionais
 3. Lógicos
 
+## Variáveis
+
+Variáveis são espaços na memória que têm a utilidade de armazenar valores. Elas podem ser simples ou compostas.
+
+### Variáveis Simples
+
+Uma variável simples corresponde a uma única posição na memória. Dessa forma, caso seja necessário armazenar outro valor na mesma variável, o valor anterior será perdido.
+
+```
+var a = 1
+```
+
+### Variáveis Compostas
+
+Uma variável composta é um conjunto de posições na memória que armazenam elementos, cada um contendo valor e indentificados por uma chave de indentificação/índice.
+
+Variáveis compostas são conhecidas como vetor. No Javascript também são conhecidas como Array. Um array é identificado quando percebemos que há a abertura e fechamento de colchetes. Veja o exemplo abaixo:
+
+```
+var a = []
+```
+
+> O array acima é um array vazio. Além disso, é importante manter em mente que a contagem das posições/índice dos elementos de um array começa do 0 e não do 1.
+
+### Tipos de Variáveis no Javascript
+
+Há três tipos de variáveis no Javascript: **Var**, **Let** e **Const**.
+
+### Var
+
+O tipo de variável **Var** é o mais antigo e está presente desde quando a linguagem Javascript foi idealizada. Seu escopo é global por conta de um processo conhecido como **Içamento** (Hoisting). Isto basicamente significa que as variáveis do tipo Var, mesmo sendo definidas dentro do escopo de uma classe ou função, estará disponível para uso por outras funções/métodos.
+
+```js
+var variavel = 1
+```
+
+### Let
+
+O tipo de variável **Let** surgiu na especificação Ecmascript 2015 conhecida como ES6 juntamente com o tipo de variável Const.
+Uma variável do tipo Let possui escopo local e só é visível dentro do escopo que foi definida. Dessa forma, se uma variável let for definida dentro de uma função ela só será existirá dentro dessa mesma função.
+Além disso, assim como o tipo de variável Var ela permite ser sobrescrita.
+
+```js
+let variavel = 2
+```
+
+### Const
+
+O tipo de variável **Const** também surgiu na especificação Ecmascript 2015. A diferença deste tipo de variável para a Let é que ela não pode ser alterada depois de criada. Daí o por quê de seu nome: Constante.
+
+```js
+const variavel = 3
+```
+
 ## DOM (Document Object Model)
 
 O Document Object Model é a estrutura que representa os elementos de um documento HTML ou XML. Ele é uma estrutura de dados hierárquica que segue o modelo de árvore. Dessa forma, os elementos são dispostos acima ou abaixo de outros elementos.
@@ -108,6 +162,7 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex015
 - ex016
 - ex018
+- ex019
 
 ### Eventos DOM
 
@@ -126,6 +181,7 @@ Você pode verificar o uso de eventos nos seguintes exercícios:
 - ex015
 - ex016
 - ex018
+- ex019
 
 ### Ouvinte de Eventos (Event Listener)
 
@@ -216,6 +272,7 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex015
 - ex016
 - ex018
+- ex019
 
 ## Repetições
 
@@ -234,3 +291,5 @@ Você pode verificar o uso de estruturas de repetição nos seguintes exercício
 
 - ex017
 - ex018
+- ex019
+- ex020
