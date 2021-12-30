@@ -6,7 +6,7 @@ This repository is a full guide of my studies about Javascript. Feel free to use
 
 ## The Language
 
-Javascript was created by Brendan Eich of the Netscape Entreprise in 1995. It's a high-level compiled language and multi-paradigms that supports the paradigms of object-oriented, functional and structured programming. Furthermore, It has dinamic typing and figure on top of world wide web alongside HTML and CSS.
+Javascript was created by Brendan Eich of the Netscape Entreprise in 1995. It's a high-level interpreted and multi-paradigms language that supports the paradigms of object-oriented, functional and structured programming. Furthermore, It has dinamic typing and figure on top of world wide web alongside HTML and CSS.
 
 ## Fundamentals
 
