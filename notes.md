@@ -252,6 +252,7 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex016
 - ex018
 - ex019
+- ex022
 
 ### Eventos DOM
 
@@ -271,6 +272,7 @@ Você pode verificar o uso de eventos nos seguintes exercícios:
 - ex016
 - ex018
 - ex019
+- ex022
 
 ### Ouvinte de Eventos (Event Listener)
 
@@ -362,6 +364,8 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex016
 - ex018
 - ex019
+- ex021
+- ex022
 
 ## Repetições
 
@@ -382,6 +386,7 @@ Você pode verificar o uso de estruturas de repetição nos seguintes exercício
 - ex018
 - ex019
 - ex020
+- ex022
 
 ## Funções
 
@@ -405,3 +410,15 @@ let consequence = name(param)
 > O **retorno** corresponde ao resultado após a execução da função. Dessa forma, o retorno da função exemplo acima foi a soma realizada durante a **ação**.
 
 ### Função Recursiva
+
+Função recursiva é uma função que chama a si mesma. Um bom exemplo de função recursiva é o cálculo do fatorial de um número.
+
+```js
+function fatorial(n) {
+    if (n == 1) {
+        return 1
+    } else {
+        return n * fatorial(n-1)
+    }
+}
+```
