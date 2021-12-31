@@ -12,7 +12,7 @@ Javascript é uma linguagem de programação interpretada, multiparadigma e com 
 
 ### Operadores Aritméticos
 
-- ```+``` <span style="margin-left: 20px;">Adição</span>
+- ```+``` <span style="margin-left: 20px;">Adição e Concatenação</span>
 - ```-``` <span style="margin-left: 20px;">Subtração</span>
 - ```*``` <span style="margin-left: 20px;">Multiplicação</span>
 - ```/``` <span style="margin-left: 20px;">Divisão</span>
@@ -84,20 +84,36 @@ O Javascript possui diversos tipos de dados. São eles: String, Number, Boolean,
 
 ### String
 
-O tipo de dado string refere-se ao texto. De forma mais precisa, string é um tipo de dado onde há um conjunto de caracteres. Identificar uma string é muito fácil, toda string deve obrigaróriamente estar envolta entre aspas simples '' ou dupla "". Há uma terceira forma, mais avançada, de representar strings: template strings.
-A template string é uma estrutura de código que permite a interpolação de variáveis dentro de um texto. A tamplate string é definida pelos símbolos de crase ``.
-Vejamos abaixo alguns exemplos de strings.
+O tipo de dado string refere-se ao texto. De forma mais precisa, string é um tipo de dado onde há um conjunto de caracteres. Toda string deve obrigatóriamente estar envolta entre aspas simples ou duplas. Há também como concatenar strings, ou seja, fazer a junção de uma string com outra, através do operador **+**.
 
 ```js
-var a = 'String com aspas simples'
+var nome = 'John'
+var hello = 'Hello, ' + nome + ' . Bem-vindo de volta!'
+```
+
+> Repare que dependendo do valor das variáveis haverá uma concatenação ou soma. Se numa operação de soma alguma das variáveis for uma string, o que será realizado será uma concatenação. A soma só acontece com o tipo de dado Number.
+
+Uma prática recorrente durante a codificação de qualquer algorítimo é a interpolação de valores, isto é, uma forma mais avançada e menos poluída de realizar a concatenação. Ela é realizada através do que chamamos de **template literals**.
+
+```js
+var nome = 'John'
+var hello = `Hello, ${nome}. Bem-vindo de volta!`
+```
+
+A **template literals** é uma estrutura de código que permite a interpolação de variáveis dentro de um texto. Ela é definida pelos símbolos de acento grave. Vejamos abaixo alguns exemplos.
+
+```js
+var a = 'String normal com aspas simples'
 ```
 ```js
-var b = "String com aspas duplas"
+var b = "String normal com aspas duplas"
 ```
 
 ```js
-var c = `String com crase interpolada com a variável ${b}`
+var c = `Template Literals com a variável ${b} interpolada`
 ```
+
+> Note que a interpolação de uma variável utilizando template literals começa com o símbolo de cifrão, seguido do nome da variável entre chaves.
 
 ### Number
 
