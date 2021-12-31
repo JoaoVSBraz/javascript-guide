@@ -78,6 +78,62 @@ Pré-incremento
 2. Relacionais
 3. Lógicos
 
+## Tipos de Dados
+
+O Javascript possui diversos tipos de dados. São eles: String, Number, Boolean, Undefined e Null. Estes 5 são os principais tipos de dados no Javascrip. Vejamos um pouco mais sobre cada um deles.
+
+### String
+
+O tipo de dado string refere-se ao texto. De forma mais precisa, string é um tipo de dado onde há um conjunto de caracteres. Identificar uma string é muito fácil, toda string deve obrigaróriamente estar envolta entre aspas simples '' ou dupla "". Há uma terceira forma, mais avançada, de representar strings: template strings.
+A template string é uma estrutura de código que permite a interpolação de variáveis dentro de um texto. A tamplate string é definida pelos símbolos de crase ``.
+Vejamos abaixo alguns exemplos de strings.
+
+```js
+var a = 'String com aspas simples'
+```
+```js
+var b = "String com aspas duplas"
+```
+
+```js
+var c = `String com crase interpolada com a variável ${b}`
+```
+
+### Number
+
+Como o próprio nome indica, Number é tipo de dado que representa os números. Não há necessidade de envolvê-los com nenhum símbolo especial como acontece nas strings.
+
+```js
+var d = 3
+```
+
+### Boolean
+
+O tipo de dado boolean trata-se de um valor lógico que pode representar **true** ou **false**. Este tipo de dado está muito presente nas estruturas condicionais que veremos mais adiante.
+
+```js
+var e = true
+```
+
+### Undefined
+
+O tipo de dado undefined refere-se ao dado desconhecido. É visto com frequência quando tentamos exibir um valor inexistenten, de uma variável. Veja bem, a variável existe, mas seu valor ainda não. Vejamos um exemplo para compreender melhor.
+
+```js
+var f
+console.log(a)
+```
+
+> Repare que a variável **f** não possui nenhum valor atribuído a ela. Logo, por padrão seu tipo de dado será undefined até que seja especificado o contrário.
+
+### Null
+
+O tipo de dado **null** é muito semelhante ao undefined. Entretanto, usamos o tipo de dado null para atribuir a variáveis que precisam de algun valor desde o início. Por mais que o valor seja nulo, ainda é um valor.
+
+```js
+var g = null
+```
+
 ## Variáveis
 
 Variáveis são espaços na memória que têm a utilidade de armazenar valores. Elas podem ser simples ou compostas.
