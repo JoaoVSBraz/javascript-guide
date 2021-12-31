@@ -158,6 +158,23 @@ var a = []
 
 > O array acima é um array vazio. Além disso, é importante manter em mente que a contagem das posições/índice dos elementos de um array começa do 0 e não do 1.
 
+### Regras para Nomeação de Variáveis
+
+Para evitar que erros ocorram durante a execução de um script há algumas regras que devem ser seguidas sempre que uma nova variável estiver para ser definida.
+
+1. Variáveis não podem ser nomeadas com palavras reservadas. As palavras reservadas são as palavras que o javascript por padrão utiliza. O exemplo a seguir é um erro:
+```js
+var var = 'Oi'
+```
+2. Variáveis não podem começar com números. O exemplo a seguir é um erro:
+```js
+var 1nome = 'John'
+```
+3. Nomes de variáveis não podem conter espaços em branco. O exemplo a seguir é um erro:
+```js
+var meu nome = 'John'
+```
+
 ### Tipos de Variáveis no Javascript
 
 Há três tipos de variáveis no Javascript: **Var**, **Let** e **Const**.
