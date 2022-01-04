@@ -1,16 +1,17 @@
-function getMilk(money) {
-    //bottle of milk == 1.5
-    bottlesOfMilk = parseInt(money / 1.5) 
-
-    console.log('move')
-    console.log('move')
-    console.log('turn left')
-    console.log('move')
-    console.log('move')
-    console.log('turn right')
-    console.log('move')
-    console.log('move')
-    console.log('buy ' + bottlesOfMilk + ' bottles of milk')
+function getMilk(money, milkValue) {
+    console.log('Go to the market')
+    console.log('Buy ' + bottlesOfMilk(money, milkValue) + ' bottles of milk')
+    console.log('Back to home with the change amount')
+    return change(money, milkValue)
 }
 
-getMilk(5)
+function bottlesOfMilk(money, milkValue) {
+    return Math.floor(money / milkValue)
+}
+
+function change(money, milkValue) {
+    let change = money % milkValue
+    return change
+}
+
+console.log('Hello, Master. Here are your change: ' + getMilk(10, 3))
