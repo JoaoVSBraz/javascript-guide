@@ -253,6 +253,8 @@ Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
 - ex018
 - ex019
 - ex022
+- ex023
+- ex029
 
 ### Eventos DOM
 
@@ -273,6 +275,10 @@ Você pode verificar o uso de eventos nos seguintes exercícios:
 - ex018
 - ex019
 - ex022
+- ex023
+- ex024
+- ex025
+- ex029
 
 ### Ouvinte de Eventos (Event Listener)
 
@@ -366,6 +372,8 @@ Você pode verificar o uso de condições nos seguintes exercícios:
 - ex019
 - ex021
 - ex022
+- ex023
+- ex029
 
 ## Repetições
 
@@ -386,7 +394,11 @@ Você pode verificar o uso de estruturas de repetição nos seguintes exercício
 - ex018
 - ex019
 - ex020
+- ex021
 - ex022
+- ex032
+- ex034
+- ex035
 
 ## Funções
 
@@ -422,3 +434,5 @@ function fatorial(n) {
     }
 }
 ```
+
+Funções são estruturas fundamentais na programação. Sendo assim, você encontrará em todos os exercícios realizados.
