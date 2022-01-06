@@ -1,5 +1,4 @@
 function showString() {
-    let resultado = document.getElementById('resultado')
 
     // Get the user name
     let userName = prompt('Qual é o seu nome?')
