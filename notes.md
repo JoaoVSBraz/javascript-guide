@@ -241,21 +241,6 @@ A seleção de elementos no DOM pode ser feita por:
     - querySelector()
     - querySelectorAll()
 
-Você pode verificar o uso da seleção de elementos nos seguintes exercícios:
-
-- ex005
-- ex006
-- ex007
-- ex010
-- ex011
-- ex015
-- ex016
-- ex018
-- ex019
-- ex022
-- ex023
-- ex029
-
 ### Eventos DOM
 
 Eventos DOM são ações que visam alterar comportamentos numa página web a fim de torná-la dinâmica - propósito do Javascript. Vejamos alguns eventos relacionados as ações de clique.
@@ -264,22 +249,6 @@ Eventos DOM são ações que visam alterar comportamentos numa página web a fim
 - mouseenter
 - mouseout
 
-Você pode verificar o uso de eventos nos seguintes exercícios:
-
-- ex006
-- ex007
-- ex010
-- ex011
-- ex015
-- ex016
-- ex018
-- ex019
-- ex022
-- ex023
-- ex024
-- ex025
-- ex029
-
 ### Ouvinte de Eventos (Event Listener)
 
 O Event Listener é um método utilizado para adicionar um bloco de código que ficará "escutando" quando determinado evento for acionado.
@@ -287,10 +256,6 @@ O Event Listener é um método utilizado para adicionar um bloco de código que 
 ```
 a.addEventListener('click', clicar)
 ```
-
-Você pode verificar o uso do event listener nos seguintes exercícios:
-
-- ex006
 
 ## Condições
 
@@ -357,24 +322,6 @@ switch(expressão) {
 >
 > Um comando que não deve ser esquecido de forma alguma é o comando **break**. É ele quem encerra o fluxo do programa. Caso seja esquecido, os comandos seguintes também serão executados.
 
-Você pode verificar o uso de condições nos seguintes exercícios:
-
-- ex008
-- ex009
-- ex010
-- ex011
-- ex012
-- ex013
-- ex014
-- ex015
-- ex016
-- ex018
-- ex019
-- ex021
-- ex022
-- ex023
-- ex029
-
 ## Repetições
 
 Em programação uma repetição é um bloco de código que se repete enquanto uma condição for verdadeira. As repetições são conhecidas como estruturas de repetição, laços de repetição ou iteração, isto é, todas referem-se a mesma coisa: repetição.
@@ -387,18 +334,6 @@ Em programação uma repetição é um bloco de código que se repete enquanto u
 > Estrutura de repetição com teste lógico no final
 - For
 > Estrutura de repetição com variável de controle
-
-Você pode verificar o uso de estruturas de repetição nos seguintes exercícios:
-
-- ex017
-- ex018
-- ex019
-- ex020
-- ex021
-- ex022
-- ex032
-- ex034
-- ex035
 
 ## Funções
 
@@ -435,4 +370,33 @@ function fatorial(n) {
 }
 ```
 
-Funções são estruturas fundamentais na programação. Sendo assim, você encontrará em todos os exercícios realizados.
+## Objetos
+
+Um objeto consiste na representação digital de algo do mundo real. Ele surge do paradigma de orientação a objetos. Cada objeto, portanto, assim como no mundo real, possui suas características e funções. Cabe a nós desenvolvedores definirmos quais características e funções um objeto terá.
+No Javascript, basicamente tudo é considerado um objeto. Um objeto no Javascript é representado por um conjunto de chaves.
+
+```js
+let lamborghiniGallardo = {
+    marca: 'Lamborghini',
+    modelo: 'Gallardo',
+    cor: 'Laranja',
+}
+```
+
+O objeto acima consiste na representação de um carro esportivo da vida real, contendo suas características e funções devidamente descritas - obviamente de forma seletiva tendo em vista a dificuldade de representar todas as característicsa de um objeto.
+
+Agora imagine que precisemos definir 50 objetos que representem carros. Seria bastante trabalhoso, concorda? Sendo assim, surge um novo conceito chamado de Construtor. O construtor na verdade é uma função que tem o objetivo de criar novos objetos. Vejamos abaixo sua sintaxe:
+
+```js
+function CarroEsportivo(marca, modelo, cor) {
+    this.marca = marca
+    this.modelo = modelo
+    this.cor = cor
+}
+```
+
+A função construtora nos permite, portanto, criar diversos objetos a partir de um modelo comum. Vejamos como é a sintaxe de criação de um novo objeto a partir do construtor:
+
+```js
+let lamborghiniGallardo = new CarroEsportivo('Lamborghini', 'Gallardo', 'Preto')
+```
