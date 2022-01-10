@@ -4,32 +4,65 @@ This repository is a full guide of my studies about Javascript. Feel free to use
 
 ![](images/javascript.gif)
 
+- [The Language](#the-language)
+- [Operators](#operators)
+- [Variables](#variables)
+
 ## The Language
 
 Javascript was created by Brendan Eich of the Netscape Entreprise in 1995. It's a high-level interpreted and multi-paradigms language that supports the paradigms of object-oriented, functional and structured programming. Furthermore, It has dinamic typing and figure on top of world wide web alongside HTML and CSS.
 
-## Fundamentals
+## Operators
 
-Some of the fundamentals of every programming language are algorithms, variables, operators, conditions and repeating structures and functions.
+Unlike others languages, Javascript has some operators which can test conditions more efficiently. These operators are equality and stric equality. The diference between these two is that the first one (equality) checks if the operands have the same value while the second (stric equality) checks if the operands have the same value AND the same data type.
 
-### Algorithm
+```js
+console.log(1 === 1)
+// expected output: true
 
-In technology algorithm is a bunch of steps that tells the machine to execute what you want. Here comes the programming languages which are the languages that machines understand. One of the best examples of an algorithm is the action of brushing teeth. Every morning you do the same steps, right?
+console.log('hi' === 'hi')
+// expected output: true
 
-1. You wake up
-2. Go to the bathroom
-3. Pick up the toothbrush
-4. Put toothpaste
-5. Brush your teeth's
-6. Then, you turn on the faucet
-7. Finally, you washes your mouth
+console.log('1' === 1)
+// expected output: false
 
-But we don't tell the machine to wash it's tooth's. So, what the functionality of one algorithm and programming? 
-The act of brushing teeth are only one the things that every single human do the same way every day, to we understand what are algorithms: actions after actions, steps by steps, to solve one problem: brush our teeths - or whatever we want the machine to do.
+console.log(0 === false)
+// expected output: false
+```
 
-### Variables
+## Variables
 
-An variable is a space at our machine memory allocated to store values. So, we can create a variable called **name** to store anyone's name for future use. But, one of the most and important and abviously things about variables is that it's they change. They vary in function of the time.
-At this point, you know that your money on your favorite bank are stored in.. guess what? A variable.
+Variables are spaces at computer memory that stores data. It can be simple variables or compound variables. Javascript has three types of variables: **var**, **let** and **const**.
 
-In construction..
+The **var** variable type it is present since its creation in 95. It has global scope because the hoisting process which hoist/elevates the variables to first lines of our script. This means that any declaration of a var variable will exists even if we call it before your definition.
+
+```js
+console.log(x)
+// expected output: undefined. 
+// The variable exist but its value still not read
+
+var x = 'Hello world'
+
+console.log(x)
+// expected output: Hello World
+```
+
+> Note that we called the variabe X before its initialization with the console.log. This works because the hoisting process. But keep in mind that the value will be empty or, **undefined**, until its definition in the middle of our code example.
+
+The **let** and **const** variable types was emerged with the Ecmascript Standard 6 especification. None of these variable types are affected by hoisting. Its scope is local, so they only exist inside your block of code.
+
+```js
+console.log(x)
+// expected value: x is not defined
+
+function greeting() {
+    let x = 'Hi'
+}
+
+console.log(x)
+// expected value: x is not defined
+```
+
+None of the console.logs above will print the value of x because it is calling the variable x out of its scope. This means that the variable x only is visible inside the greeting function.
+
+The most important difference between **let** and **const** is that let variables can be modified while const variables are constants and can't be modified.
