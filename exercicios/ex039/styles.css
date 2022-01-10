@@ -20,6 +20,8 @@ h1 {
 footer {
   color: #DBEDF3;
   font-family: sans-serif;
+  padding: 3.2rem;
+  margin: 3.2rem;
 }
 
 .w {
@@ -51,7 +53,7 @@ footer {
 }
 
 .set {
-  margin: 10% auto;
+  margin: 0 auto;
 }
 
 .game-over {
