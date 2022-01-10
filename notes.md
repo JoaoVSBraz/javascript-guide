@@ -82,6 +82,13 @@ Pré-incremento
 
 O Javascript possui diversos tipos de dados. São eles: String, Number, Boolean, Undefined e Null. Estes 5 são os principais tipos de dados no Javascrip. Vejamos um pouco mais sobre cada um deles.
 
+1. String
+2. Number
+3. Boolean
+4. Undefined
+5. Null
+6. Object
+
 ### String
 
 O tipo de dado string refere-se ao texto. De forma mais precisa, string é um tipo de dado onde há um conjunto de caracteres. Toda string deve obrigatóriamente estar envolta entre aspas simples ou duplas. Há também como concatenar strings, ou seja, fazer a junção de uma string com outra, através do operador **+**.
@@ -148,6 +155,18 @@ O tipo de dado **null** é muito semelhante ao undefined. Entretanto, usamos o t
 
 ```js
 var g = null
+```
+
+### Objects
+
+Na Ciência da Computação, objeto é um espaço na memória que armazena um conjunto de atributos. São vistos como uma coleção de propriedades que, inclusive, podem conter outros objetos.
+
+```js
+var car = {
+    brand: 'car brand',
+    model: 'car model',
+    color: 'car color'
+}
 ```
 
 ## Variáveis
