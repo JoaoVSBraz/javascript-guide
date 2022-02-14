@@ -419,3 +419,21 @@ A função construtora nos permite, portanto, criar diversos objetos a partir de
 ```js
 let lamborghiniGallardo = new CarroEsportivo('Lamborghini', 'Gallardo', 'Preto')
 ```
+
+## Typescript
+
+Como bem sabemos, o Javascript possui tipagem dinâmica. Isto significa que o tipo da variável muda de acordo com o tipo de dado armazenado nela, o que muitas vezes pode causar erros inesperados. Tendo isso em vista, a Microsoft criou o Typescript que nada mais é do que um superconjunto sintático de javascript. É através do Typescript que o javascript consegue tipagem estática.
+
+A grande vantagem de utilizar o Typescript é que ele cria a possibilidade de verificar os tipos das variáveis e responder de acordo caso haja alguma inconsistência. Vejamos um exemplo abaixo:
+
+```ts
+const user = {
+  firstName: "Angela",
+  lastName: "Davis",
+  role: "Professor",
+}
+
+console.log(user.name)
+
+Property 'name' does not exist on type '{ firstName: string; lastName: string; role: string; }'.
+```
