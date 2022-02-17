@@ -401,6 +401,30 @@ const test = (){
 
 > A função acima não executa nem retorna nada. Entretanto, como a constante recebeu a função anônima ela passa a ser uma função. Isto quer dizer que quando quisermos executá-la faríamos da seguinte forma: test()
 
+### Função Flecha (Arrow Function)
+
+Arrow functions são uma forma mais curta de escrever funções em Javascript. Além de não possuir nome, elas também não precisam da palavra reservada **function**.
+
+```js
+const arrowFunction = () => {
+    return;
+} 
+```
+
+Outro ponto importante sobre arrow functions é que os parêntreses se tornam opcionais caso a função possua apenas 1.
+
+```js
+const arrowFunction = arg => {
+    return;
+}
+```
+
+Por fim, a definição de escopo da função também torna-se opcional caso o retorno seja apenas uma expressão.
+
+```js
+const arrowFunction = arg => return arg++
+```
+
 ## Objetos
 
 Um objeto consiste na representação digital de algo do mundo real. Ele surge do paradigma de orientação a objetos. Cada objeto, portanto, assim como no mundo real, possui suas características e funções. Cabe a nós desenvolvedores definirmos quais características e funções um objeto terá.
