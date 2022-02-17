@@ -389,6 +389,18 @@ function fatorial(n) {
 }
 ```
 
+### Função Anônima
+
+Função anônima é uma função que não possui nome.
+
+```js
+const test = (){
+    return;
+}
+```
+
+> A função acima não executa nem retorna nada. Entretanto, como a constante recebeu a função anônima ela passa a ser uma função. Isto quer dizer que quando quisermos executá-la faríamos da seguinte forma: test()
+
 ## Objetos
 
 Um objeto consiste na representação digital de algo do mundo real. Ele surge do paradigma de orientação a objetos. Cada objeto, portanto, assim como no mundo real, possui suas características e funções. Cabe a nós desenvolvedores definirmos quais características e funções um objeto terá.
