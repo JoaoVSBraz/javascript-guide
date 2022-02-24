@@ -12,6 +12,8 @@ This repository is a full guide of my studies about Javascript. Feel free to use
 
 Javascript was created by Brendan Eich of the Netscape Entreprise in 1995. It's a high-level interpreted and multi-paradigms language that supports the paradigms of object-oriented, functional and structured programming. Furthermore, It has dinamic typing and figure on top of world wide web alongside HTML and CSS.
 
+The biggest difference between Javascript and other programming languages is that Javascript is the only programming language interpreted by default by all internet browsers. Moreover, supported by the NodeJS which brought JS out of browsers to the backend world, it made the language to won more and more space. The result of it, is that Javascript is currently the most popular programming language of the world.
+
 ## Operators
 
 Unlike others languages, Javascript has some operators which can test conditions more efficiently. These operators are equality and stric equality. The diference between these two is that the first one (equality) checks if the operands have the same value while the second (stric equality) checks if the operands have the same value AND the same data type.
