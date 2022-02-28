@@ -522,4 +522,76 @@ const age = pessoa.age
 
 > Note que ao desestruturarmos objetos o fizemos com o uso de um par de chaves. Assim, seguindo a correta sintaxe: par de chaves no uso de objetos e par de colchetes no uso de arrays.
 
-Como pode ser notado o uso da técnica de desestruturação torna o código mais sucinto melhorando, assim, a redigibilidade.
+### Desestruturando conjuntos de dados complexos
+
+Vejamos como desestruturar conjuntos de dados complexos como arrays tendo objetos indexados dentro de si e vice-versa. Para isso, considere o conjunto de dados a seguir:
+```js
+const animals = [
+    {
+        name: 'Cat',
+        colors: ['white', 'black'],
+        actions: {
+            eat: 'cat eating..',
+            meaw: 'meaw'
+        }
+    },
+    {
+        name: 'Dog',
+        colors: ['white', 'black'],
+        actions: {
+            eat: 'dog eating..',
+            roar: 'roar'
+        }
+    }
+]
+```
+
+Suponha que queiramos acessar de forma mais fácil os valores e propriedades do animal gato acima. Vejamos a seguir como fazer isto através da desestruturação.
+
+**Obtendo o animal gato**
+```js
+const [cat] = animals
+//o código acima equivale ao código abaixo
+const cat = animals[0]
+```
+
+> **cat** passa a se tornar uma variável que contém o objeto da primeira posição do array **animals**
+
+<br>
+
+**Obtendo o nome**
+
+```js
+const {name} = cat
+//o código acima equivale ao código abaixo
+const name = animals[0].name
+```
+
+> **name** passa a ser uma variável que contém o valor do atributo **name** do primeiro objeto do array animals
+
+<br>
+
+**Obtendo as cores**
+
+```js
+const {colors: {catFirstColor, catSecondColor}} = cat
+//o código acima equivale ao código abaixo
+const catFirstColor = animals[0].colors[0]
+const catSecondColor = animals[0].colors[1]
+```
+
+> **catFirstColor** e **catSecondColor** passam a ser variáveis contendo os valores de cor do primeiro objeto do array animals
+
+<br>
+
+**Obtendo as actions**
+```js
+const {actions: {eat: catEat, meaw}} = cat
+//o código acima equivale ao código abaixo
+const catEat = animals[0].actions.eat
+const meaw = animals[0].actions.meaw
+```
+
+>**catEat** e **meaw** passam a ser variáveis contendo as actions do primeiro elemento do array animals. Note também, que foi definido um nome diferente para a action **eat**. Para acessar uma propriedade através de um nome diferente, basta inserir dois pontos após a propriedade e definir seu novo nome.
+
+Como pôde ser notado o uso da técnica de desestruturação torna o código mais sucinto melhorando, assim, a redigibilidade.
