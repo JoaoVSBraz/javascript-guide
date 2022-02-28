@@ -458,7 +458,7 @@ let lamborghiniGallardo = new CarroEsportivo('Lamborghini', 'Gallardo', 'Preto')
 
 ## Typescript
 
-Como bem sabemos, o Javascript possui tipagem dinâmica. Isto significa que o tipo da variável muda de acordo com o tipo de dado armazenado nela, o que muitas vezes pode causar erros inesperados. Tendo isso em vista, a Microsoft criou o Typescript que nada mais é do que um superconjunto sintático de javascript. É através do Typescript que o javascript consegue tipagem estática.
+Como bem sabemos, o Javascript possui tipagem dinâmica. Isto significa que o tipo da variável muda de acordo com o tipo de dado armazenado nela, o que muitas vezes pode causar erros inesperados. Tendo isso em vista, a Microsoft criou o Typescript que nada mais é do que um superconjunto sintático de javascript. É através do Typescript que o javascript alcança a tipagem estática.
 
 A grande vantagem de utilizar o Typescript é que ele cria a possibilidade de verificar os tipos das variáveis e responder de acordo caso haja alguma inconsistência. Vejamos um exemplo abaixo:
 
@@ -473,3 +473,53 @@ console.log(user.name)
 
 Property 'name' does not exist on type '{ firstName: string; lastName: string; role: string; }'.
 ```
+
+## Desestruturação (Desctructuring)
+
+Desestruturação é o processo de desmembrar variáveis compostas em variáveis simples. Este processo ocorre tanto com valores de um array quanto propriedades de objetos.
+
+### Desestruturação de Array
+
+Considere o seguinte array
+```js
+arr = [1, 2, 3]
+```
+
+Se quiséssemos transformar cada posição do array numa variável faríamos o seguinte:
+```js
+const [one, two, three] = arr
+```
+
+O código acima equivale ao código abaixo:
+```js
+const one = arr[0]
+const two = arr[1]
+const thre = arr[2]
+```
+
+> Note que ao desestruturarmos uma array usamos colchetes, diferentemente de quando desestruturamos objetos como veremos a seguir.
+
+## Desestruturando Objetos
+
+Considere o objeto abaixo
+```js
+pessoa = {
+    name: 'John',
+    age: 23
+}
+```
+
+Se quiséssemos transformar cada propriedade em uma variável faríamos o seguinte:
+```js
+const {name, age} = pessoa
+```
+
+O código acima equivale ao código abaixo:
+```js
+const name = pessoa.name
+const age = pessoa.age
+```
+
+> Note que ao desestruturarmos objetos o fizemos com o uso de um par de chaves. Assim, seguindo a correta sintaxe: par de chaves no uso de objetos e par de colchetes no uso de arrays.
+
+Como pode ser notado o uso da técnica de desestruturação torna o código mais sucinto melhorando, assim, a redigibilidade.
