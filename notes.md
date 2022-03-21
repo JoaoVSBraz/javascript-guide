@@ -53,11 +53,12 @@ Pré-incremento
 - ``<=`` <span style="margin-left: 12px;">Menor ou igual</span>
 - ``>`` <span style="margin-left: 20px;">Maior</span>
 - ``>=`` <span style="margin-left: 12px;">Maior ou igual</span>
-- ``==`` <span style="margin-left: 12px;">Igual</span>
-- ``===`` <span style="margin-left: 4px;">Estritamente igual</span>
-- ``!=`` <span style="margin-left: 12px;">Diferente</span>
+- ``===`` <span style="margin-left: 4px;">Igualdade Estrita</span>
+- ``==`` <span style="margin-left: 12px;">Igualdade Frouxa</span>
+- ``!==`` <span style="margin-left: 4px;">Diferença Estrita</span>
+- ``!=`` <span style="margin-left: 12px;">Diferença Frouxa</span>
 
-> A diferença entre os operadores Estritamente Igual e Igual é que para que uma expressão usando o operador Estritamente Igual seja verdadeira é necessário que as variáveis sejam iguais e do mesmo tipo. Já quando se utiliza o operador Igual, basta que as variáveis sejam iguais - não precisam ser do mesmo tipo.
+> Em estruturas condicionais como o if, o javascript automaticamente executa o Type Coersion a fim de converter os tipos de dados originais no tipo booleano. Assim funciona o operador de Igualdade Frouxa - a conversão de tipo automática é permitida. Já quando o operador de Igualdade Estrita é utilizado, a conversão não é permitida. O mesmo acontece com os operadores inversos de Diferença Estrita e Diferença Frouxa.
 
 ### Operadores Lógicos
 
@@ -206,6 +207,29 @@ console.log('10' * '2')
 console.log('10' / '2')
 ```
 > No exemplo acima, ambos os tipos de dados serão convertidos de string para number
+
+<br>
+
+Type coersion em estruturas condicionais
+```js
+let money = 0
+if(money) {
+    console.log('Some text')
+} else {
+    console.log('Another text')
+}
+```
+> O javascript sempre converterá automaticamente expressões que estejam dentro da condição de uma estrutura if para um valor booleano. Dessa forma, como a variável money é igual a zero, seu resultado será convertido para boolean retornado false.
+
+### Valores falsos
+
+Vejamos abaixo uma lista com os valores que, quando convertidos para o tipo boolean, retornam o valor false.
+
+- 0
+- ''
+- Undefined
+- Null
+- NaN
 
 ## Variáveis
 
