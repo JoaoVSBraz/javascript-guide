@@ -19,7 +19,7 @@ Javascript é uma linguagem de programação interpretada, multiparadigma e com 
 - ```%``` <span style="margin-left: 20px;">Resto da Divisão</span>
 - ```**``` <span style="margin-left: 12px;">Exponenciação</span>
 
-#### Precedência de Operadores Aritméticos
+### Precedência de Operadores Aritméticos
 
 1. ```()```
 2. ```**```
@@ -35,7 +35,7 @@ Javascript é uma linguagem de programação interpretada, multiparadigma e com 
 - ``x **= 2``
 - ``x %= 2``
 
-#### Operadores de Incremento e Decremento
+### Operadores de Incremento e Decremento
 
 Pós-incremento
 
@@ -120,6 +120,12 @@ var b = "String normal com aspas duplas"
 var c = `Template Literals com a variável ${b} interpolada`
 ```
 
+```js
+var d = `String
+multi
+linhas`
+```
+
 > Note que a interpolação de uma variável utilizando template literals começa com o símbolo de cifrão, seguido do nome da variável entre chaves.
 
 ### Number
@@ -157,7 +163,7 @@ O tipo de dado **null** é muito semelhante ao undefined. Entretanto, usamos o t
 var g = null
 ```
 
-### Objects
+### Object
 
 Na Ciência da Computação, objeto é um espaço na memória que armazena um conjunto de atributos. São vistos como uma coleção de propriedades que, inclusive, podem conter outros objetos.
 
@@ -168,6 +174,38 @@ var car = {
     color: 'car color'
 }
 ```
+
+## Type conversion e type coersion
+
+Type conversion refere-se ao ato de converter um tipo de dado em outro, manualmente. Já type coersion refere-se ao ato do Javascript converter tipos de dados em outros automaticamente.
+
+Type conversion
+```js
+let year = '1990'
+Number(year)
+```
+> Variável year do tipo string é convertida para o tipo number
+
+Type coersion
+```js
+console.log('I am ' + 23 + 'years old')
+```
+> O operador de soma no caso acima irá converter o dado do tipo number em string
+
+<br>
+
+```js
+console.log('23' - '10' - 3)
+```
+> O operador de subtração acima irá converter os dados do tipo string em number
+
+<br>
+
+```js
+console.log('10' * '2')
+console.log('10' / '2')
+```
+> No exemplo acima, ambos os tipos de dados serão convertidos de string para number
 
 ## Variáveis
 
@@ -285,9 +323,9 @@ Condições são estruturas lógicas que nos permitem controlar o fluxo de um pr
 - if/else
 - switch
 
-### Exemplos
+<br>
 
-- Condição simples
+Exemplo de condição simples
 
 ```js
 if(true) {
@@ -295,7 +333,7 @@ if(true) {
 }
 ```
 
-- Condição composta
+Exemplo de condição composta
 
 ```js
 if(true) {
@@ -319,7 +357,7 @@ if(false){
 }
 ```
 
-- Condição múltipla
+Exemplo de condição multipla
 
 ```js
 switch(expressão) {
@@ -595,3 +633,4 @@ const meaw = animals[0].actions.meaw
 >**catEat** e **meaw** passam a ser variáveis contendo as actions do primeiro elemento do array animals. Note também, que foi definido um nome diferente para a action **eat**. Para acessar uma propriedade através de um nome diferente, basta inserir dois pontos após a propriedade e definir seu novo nome.
 
 Como pôde ser notado o uso da técnica de desestruturação torna o código mais sucinto melhorando, assim, a redigibilidade.
+
