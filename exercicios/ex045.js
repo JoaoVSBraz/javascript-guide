@@ -22,8 +22,11 @@
 // - Data Bonus 1: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 123
 // - Data Bonus 2: Dolphins score 97, 112 and 101. Koalas score 109, 95 and 106
 
+
+// SOLUTION USING OBJECTS
 // DATA
 
+/*
 const dolphins = {
     firstScore: 96,
     secondScore: 108,
@@ -111,6 +114,81 @@ if (dolphinsBonusTwo.avg() || koalasBonusTwo.avg() > 100) {
         console.log(`Dolphins has score of ${dolphinsBonusTwo.avg()} and Koalas has score of ${koalasBonusTwo.avg()}. Both teams has the same score. It's a draw! \n`);
     } else {
         console.log(`Koalas has score of ${koalasBonusOne.avg()} and Dolphins has score of ${dolphinsBonusOne.avg()}. Koalas won the trophy!\n`);
+    }
+} else {
+    console.log('Neither Dolphins nor Koalas reached the minimum score of 100\n');
+}
+*/
+
+// SOLUTION USING ARRAYS
+
+// DOLPHINS DATA [96, 108, 89]
+// KOALAS DATA [88, 91, 110]
+
+// DOLPHINS DATA BONUS 1 [97, 112, 101]
+// KOALAS DATA BONUS 1 [109, 95, 123]
+
+// DOLPHINS DATA BONUS 2 [97, 112, 101]
+// KOALAS DATA BONUS 2 [109, 95, 106]
+
+// DATA
+const arrDolphins = [96, 108, 89]
+const arrDolphinsAvg = (arrDolphins[0] + arrDolphins[1] + arrDolphins[2]) / 3
+
+const arrKoalas = [88, 91, 110]
+const arrKoalasAvg = (arrKoalas[0] + arrKoalas[1] + arrKoalas[2]) / 3
+
+console.log('--------------- CALC DATA ---------------\n');
+// CALC DATA
+if (arrDolphinsAvg || arrKoalasAvg > 100) {
+    if (arrDolphinsAvg > arrKoalasAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsAvg)} and Koalas has the score of ${Math.trunc(arrKoalasAvg)}. Dolphins won the trophy!\n`);
+    } else if (arrDolphinsAvg === arrKoalasAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsAvg)} and Koalas has the score of ${Math.trunc(arrKoalasAvg)}. It's a draw!\n`);
+    } else {
+        console.log(`Koalas has the score of ${Math.trunc(arrKoalasAvg)} and Dolphins has the score of ${Math.trunc(arrDolphinsAvg)}. Koalas won the trophy!\n`);
+    }
+} else {
+    console.log('Neither Dolphins nor Koalas reached the minimum score of 100\n');
+}
+
+// DATA BONUS 1
+const arrDolphinsBonusOne = [97, 112, 101]
+const arrDolphinsBonusOneAvg = (arrDolphinsBonusOne[0] + arrDolphinsBonusOne[1] + arrDolphinsBonusOne[2]) / 3
+
+const arrKoalasBonusOne = [109, 95, 123]
+const arrKoalasBonusOneAvg = (arrKoalasBonusOne[0] + arrKoalasBonusOne[1] + arrKoalasBonusOne[2]) / 3
+
+console.log('--------------- CALC DATA BONUS 1 ---------------\n');
+// CALC DATA BONUS 1
+if (arrDolphinsBonusOneAvg || arrKoalasBonusOneAvg > 100) {
+    if (arrDolphinsBonusOneAvg > arrKoalasBonusOneAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsBonusOneAvg)} and Koalas has the score of ${Math.trunc(arrKoalasBonusOneAvg)}. Dolphins won the trophy!\n`);
+    } else if (arrDolphinsBonusOneAvg === arrKoalasBonusOneAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsBonusOneAvg)} and Koalas has the score of ${Math.trunc(arrKoalasBonusOneAvg)}. It's a draw!\n`);
+    } else {
+        console.log(`Koalas has the score of ${Math.trunc(arrKoalasBonusOneAvg)} and Dolphins has the score of ${Math.trunc(arrDolphinsBonusOneAvg)}. Koalas won the trophy!\n`);
+    }
+} else {
+    console.log('Neither Dolphins nor Koalas reached the minimum score of 100\n');
+}
+
+// DATA BONUS 2
+const arrDolphinsBonusTwo = [97, 112, 101]
+const arrDolphinsBonusTwoAvg = (arrDolphinsBonusTwo[0] + arrDolphinsBonusTwo[1] + arrDolphinsBonusTwo[2]) / 3
+
+const arrKoalasBonusTwo = [109, 95, 106]
+const arrKoalasBonusTwoAvg = (arrKoalasBonusTwo[0] + arrKoalasBonusTwo[1] + arrKoalasBonusTwo[2]) / 3
+
+console.log('--------------- CALC DATA BONUS 2 ---------------\n');
+// CALC DATA BONUS 2
+if (arrDolphinsBonusTwoAvg || arrKoalasBonusTwoAvg > 100) {
+    if (arrDolphinsBonusTwoAvg > arrKoalasBonusTwoAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsBonusTwoAvg)} and Koalas has the score of ${Math.trunc(arrKoalasBonusTwoAvg)}. Dolphins won the trophy!\n`);
+    } else if (arrDolphinsBonusTwoAvg === arrKoalasBonusTwoAvg) {
+        console.log(`Dolphins has the score of ${Math.trunc(arrDolphinsBonusTwoAvg)} and Koalas has the score of ${Math.trunc(arrKoalasBonusTwoAvg)}. It's a draw!\n`);
+    } else {
+        console.log(`Koalas has the score of ${Math.trunc(arrKoalasBonusTwoAvg)} and Dolphins has the score of ${Math.trunc(arrDolphinsBonusTwoAvg)}. Koalas won the trophy!\n`);
     }
 } else {
     console.log('Neither Dolphins nor Koalas reached the minimum score of 100\n');
