@@ -4,15 +4,17 @@ This repository is a full guide of my studies about Javascript. Feel free to use
 
 ![](images/javascript.gif)
 
-- [The Language](#the-language)
+- [A brief history](#a-brief-history)
 - [Operators](#operators)
 - [Variables](#variables)
 
-## The Language
+## A brief history
 
 Javascript was created by Brendan Eich of the Netscape Entreprise in 1995. It's a high-level interpreted and multi-paradigms language that supports the paradigms of object-oriented, functional and structured programming. Furthermore, It has dinamic typing and figure on top of world wide web alongside HTML and CSS.
 
-The biggest difference between Javascript and other programming languages is that Javascript is the only programming language interpreted by default by all internet browsers. Moreover, supported by the NodeJS which brought JS out of browsers to the backend world, it made the language to won more and more space. The result of it, is that Javascript is currently the most popular programming language of the world.
+Soon after the release of the Javascript language, other Javascript-based languages emerged such as Internet Explorer's JScript. To prevent the internet from becoming a place without rules, the Ecma organization created a standard for the Javascript language called ECMAScript. Some versions were released until 2015 when new versions of the standard started to occur annually.
+
+The biggest difference between Javascript and other programming languages is that Javascript is the only programming language interpreted by default by all internet browsers. Moreover, supported by the NodeJS which brought JS out of browsers to the backend world, it made the language to won more and more space. The result of it, is that Javascript is currently the most popular programming language.
 
 ## Operators
 
