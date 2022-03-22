@@ -2,6 +2,32 @@
 
 Javascript é uma linguagem de programação interpretada, multiparadigma e com tipagem dinâmica. Foi criada em 1995 por Brendan Eich.
 
+## Expressions x Statements
+
+Dois conceitos muito importantes em Javascript são expressões (expressions) e declarações (statements). Expressions tratam-se de qualquer parte de código que produza um valor, um tipo de dado. Já statements, são partes de código que executam ações - como o ato de iterar um array de elementos, uma declaração if..else, definição de funções, etc.
+
+### Expressions
+
+Segue abaixo uma lista das partes de código consideradas expessões.
+
+- Expressões aritméticas
+- Expressões string
+- Expressões lógicas
+- Expressões primárias
+- Left-hand-side expressions
+- Assignment expressions
+- Function expressions
+
+### Statements
+
+Segue abaixo uma lista das partes de código consideradas declarações.
+
+- Declaration statements
+- Expression statements
+- Conditional statements
+- Loops and jumps
+- Function declarations
+
 ## Operadores
 
 - Aritméticos
