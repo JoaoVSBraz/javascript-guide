@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jquery Ajax</h1>
+    </header>
+    <section>
+        <div>
+            <div>
+                <h2>Escolha seu Pokemón!</h2>
+            </div>
+            <div id="selecao">
+                <div>
+                    <label for="dito">Bulbasaur</label>
+                    <input type="radio" name="poke" value="bulbasaur" class="pokemon" onclick="getPokeName(event)">
+                </div>
+                <div>
+                    <label for="dito">Squirtle</label>
+                    <input type="radio" name="poke" value="squirtle" class="pokemon" onclick="getPokeName(event)">
+                </div>
+                <div>
+                    <label for="dito">Charizard</label>
+                    <input type="radio" name="poke" value="charizard" class="pokemon" onclick="getPokeName(event)">
+                </div>
+                <div>
+                    <label for="dito">Chikorita</label>
+                    <input type="radio" name="poke" value="chikorita" class="pokemon" onclick="getPokeName(event)">
+                </div>
+                <div>
+                    <label for="dito">Dito</label>
+                    <input type="radio" name="poke" value="ditto" class="pokemon" onclick="getPokeName(event)">
+                </div>
+            </div>
+            <button onclick="getPokemon()">Pegar!</button>
+        </div>
+        <div id="resultado">
+            
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; Javascript Guide</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>

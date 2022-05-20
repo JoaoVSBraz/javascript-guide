@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(64, 152, 252);
+    font: normal 15pt Arial;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+}
+
+section {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 5px;
+    padding: 16px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.212);
+    text-align: center;
+}
+
+section button{
+    margin-bottom: 24px;
+    background-color: rgb(64, 152, 252);
+    color: #fff;
+    padding: 8px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px ;
+}
+
+section #selecao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+section #selecao > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+}
+
+section .pokemon{
+    margin: 8px;
+}
+
+footer {
+    color: #fff;
+    font-style: italic;
+    text-align: center;
+}
