@@ -11,9 +11,9 @@ function getPokemon() {
     }).done(function (data) {
         PokemonComponent(data)
     }).fail(function () {
-        console.log('Algo de errado não está certo!');
+        alert('Algo de errado não está certo')
     })
-    console.log();
+
     return `<img src=${poke.url} />`
 };
 
@@ -21,7 +21,17 @@ function PokemonComponent(data) {
     const resultado = document.querySelector('#resultado')
     const pokeName = PokeName(data)
     const pokeImage = PokeImage(data)
-    resultado.innerHTML = `${pokeName} <br /> ${pokeImage}`
+    
+    try {
+
+        if(pokeName == null || undefined & pokeImage == null || undefined){
+            throw 'Algo de errado não está certo'
+        }
+
+        resultado.innerHTML = `${pokeName} <br /> ${pokeImage}`
+    } catch (error) {
+        alert(error)
+    }
 
     function PokeImage(data) {
         return `<img src=${data.sprites.other["official-artwork"].front_default} style="width: 150px; margin-top: 24px"/>`
