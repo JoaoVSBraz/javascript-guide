@@ -32,14 +32,17 @@ function PokemonComponent(data) {
     } catch (error) {
         alert(error)
     }
-
-    function PokeImage(data) {
-        return `<img src=${data.sprites.other["official-artwork"].front_default} style="width: 150px; margin-top: 24px"/>`
-    };
     
     function PokeName(data) {
-        return `<h2>Você escolheu o ${data.name}!`
+        const pokeName = `<h2>Você escolheu o ${data.name}`
+        return pokeName
     }
+
+    function PokeImage(data) {
+        const pokeImage = `<img src=${data.sprites.other["official-artwork"].front_default} style="width: 150px; margin-top: 24px"/>`
+        return pokeImage
+    };
+    
 }
 
 
