@@ -54,3 +54,18 @@ footer {
     font-style: italic;
     text-align: center;
 }
+
+@media (min-width: 375px){
+    section #selecao {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (min-width: 768px) {
+    section #selecao {
+        display: flex;
+        flex-direction: row;
+    }
+}
