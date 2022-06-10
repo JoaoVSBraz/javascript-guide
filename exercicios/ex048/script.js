@@ -1,112 +1,70 @@
+const dinamicForm = document.getElementById('form-body')
+
 const btnDadosPessoais = document.getElementById('dados-pessoais')
 const btnInfoVeiculo = document.getElementById('info-veiculo')
 const btnPontoAtendimento = document.getElementById('ponto-atendimento')
-const dinamicForm = document.getElementById('form-body')
-dinamicForm.innerHTML = dadosPessoais()
+
+const formDadosPessoais = document.getElementById('form-dados-pessoais')
+const formInfoVeiculo = document.getElementById('form-info-veiculo')
+const formPontoAtendimento = document.getElementById('form-ponto-atendimento')
+
+formDadosPessoais.style.display = 'flex'
+formInfoVeiculo.style.display = 'none'
+formPontoAtendimento.style.display = 'none'
 
 btnDadosPessoais.addEventListener('click', () => {
-    dinamicForm.innerHTML = dadosPessoais()
+    formDadosPessoais.style.display = 'flex'
+    formInfoVeiculo.style.display = 'none'
+    formPontoAtendimento.style.display = 'none'
 } )
 
 btnInfoVeiculo.addEventListener('click', () => {
-    dinamicForm.innerHTML = infoVeiculo()
+    formDadosPessoais.style.display = 'none'
+    formInfoVeiculo.style.display = 'flex'
+    formPontoAtendimento.style.display = 'none'
 })
 
 btnPontoAtendimento.addEventListener('click', () => {
-    dinamicForm.innerHTML = pontoAtendimento()
+    formDadosPessoais.style.display = 'none'
+    formInfoVeiculo.style.display = 'none'
+    formPontoAtendimento.style.display = 'flex'
 })
 
-let cpf = document.getElementById('cpf')
-let nome = document.getElementById('nome')
-let telefone = document.getElementById('telefone')
-let celular = document.getElementById('celular')
-let email = document.getElementById('email')
 
 
-const formData = {
-    cpf,
-    nome,
-    telefone,
-    celular,
-    email
-}
+function sendData(event) {
+    event.preventDefault()
+   
+    let cpf = document.getElementById('cpf').value
+    let nome = document.getElementById('nome').value
+    let telefone = document.getElementById('telefone').value
+    let celular = document.getElementById('celular').value
+    let email = document.getElementById('email').value
 
-function dadosPessoais() {
-    return (
-        `
-        <div id="form-dados-pessoais">
-        
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" id="cpf" placeholder="Informe o número do CPF">
+    let placa = document.getElementById('placa-veiculo').value
+    let renavam = document.getElementById('renavam').value
+    let ufVeiculo = document.getElementById('uf-veiculo').value
 
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+    let tipoAgendamento = document.getElementById('tipo-agendamento').value
+    let pontoAtendimento = document.getElementById('ponto-atendimento-opt').value
+    let diaAgendamento = document.getElementById('dia-agendamento').value
+    let horarioAgendamento = document.getElementById('horario-agendamento').value
 
-            <label for="telefone">Telefone residencial</label>
-            <input type="text" name="telefone" id="telefone" placeholder="Informe seu telefone residencial">
-                        
-            <label for="telefone">telefone celular</label>
-            <input type="text" name="celular" id="celular" placeholder="Informe seu telefone celular">
+    let formData = {
+        "cpf": cpf,
+        "nome": nome,
+        "telefone": telefone,
+        "celular": celular,
+        "email": email,
+        "placa": placa,
+        "renavam": renavam,
+        "ufVeiculo": ufVeiculo,
+        "tipoAgendamento": tipoAgendamento,
+        "pontoAtendimento": pontoAtendimento,
+        "diaAgendamento": diaAgendamento,
+        "horarioAgendamento": horarioAgendamento
+    }
 
-            <label for="telefone">E-mail</label>
-            <input type="text" name="email" id="email" placeholder="Informe seu e-mail">
-       
-        </div>
-        `
-    )
-}
+    console.log(formData);
 
-function infoVeiculo() {
-    return (
-        `
-        <div id="form-info-veiculo">
-        
-            <label for="placa-veiculo">Placa do veículo</label>
-            <input type="text" name="placa-veiculo" id="placa-veiculo" placeholder="Informe a placa">
-
-            <label for="renavam">Renavam do veículo</label>
-            <input type="text" name="ranavam" id="renavam" placeholder="Informe o renavam">
-
-            <label for="veiculo-uf">UF do veículo</label>
-            <select name="uf-veiculo" id="uf-veiculo">
-                <option value="PE">PE</option>
-            </select>
-        
-        </div>
-        `
-    )
-}
-
-function pontoAtendimento() {
-    return (
-        `
-        <div id="form-ponto-atendimento">
-        
-            <label for="tipo">Tipo</label>
-            <select name="tipo" id="tipo">
-                <option>Tipo 1</option>
-            </select>
-
-            <label for="ponto-atendimento-opt">Ponto de atendimento</label>
-            <select name="ponto-atendimento-opt" id="ponto-atendimento-opt">
-                <option>Ponto 1</option>
-            </select>
-
-            <label for="dia-agendamento">Dia do agendamento</label>
-            <input type="date" name="dia-agendamento" id="dia-agendamento">
-
-            <label for="horario-agendamento">Horário do agendamento</label>
-            <select name="horario-agendamento" id="horario-agendamento">
-                <option>Horário 1</option>
-            </select>
-
-            <button type="submit">Enviar</button>
-        
-        </div>
-        `
-    )
-}
-
-for (let i = 0; i < dinamicForm.children.length; i++ ) {
-    console.log(dinamicForm.children[i].children[i]);
 }
