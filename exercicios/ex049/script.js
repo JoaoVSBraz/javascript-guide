@@ -1,16 +1,18 @@
-const inputChute = document.getElementById('inputChute');
-const btnChute = document.getElementById('btnChute');
-const chutesRestantes = document.getElementById('chutesRestantes');
+const palpite = document.getElementById('palpite');
+const enviar = document.getElementById('enviar');
+
+const palpites = document.getElementById('palpites');
+const ultimosResultados = document.getElementById('ultimosResultados')
 const baixoOuAlto = document.getElementById('baixoOuAlto');
 
-let contagemChutes = 1;
+let contagemPalpites = 1;
 let resetarBotao;
 
-btnChute.addEventListener('click', (e) => {
+enviar.addEventListener('click', (e) => {
     e.preventDefault()
     verificarChute()
 })
 
 function verificarChute() {
-    console.log('oi');
+    
 }
