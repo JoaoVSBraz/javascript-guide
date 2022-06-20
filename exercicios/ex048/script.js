@@ -1,4 +1,5 @@
 const dinamicForm = document.getElementById('form-body')
+const resultado = document.getElementById('resultado')
 
 const btnDadosPessoais = document.getElementById('dados-pessoais')
 const btnInfoVeiculo = document.getElementById('info-veiculo')
@@ -34,7 +35,7 @@ btnPontoAtendimento.addEventListener('click', () => {
 
 function sendData(event) {
     event.preventDefault()
-   
+
     let cpf = document.getElementById('cpf').value
     let nome = document.getElementById('nome').value
     let telefone = document.getElementById('telefone').value
@@ -56,15 +57,43 @@ function sendData(event) {
         "telefone": telefone,
         "celular": celular,
         "email": email,
+
         "placa": placa,
         "renavam": renavam,
         "ufVeiculo": ufVeiculo,
+
         "tipoAgendamento": tipoAgendamento,
         "pontoAtendimento": pontoAtendimento,
         "diaAgendamento": diaAgendamento,
         "horarioAgendamento": horarioAgendamento
     }
+    
+    resultado.innerHTML = result(formData)
 
-    console.log(formData);
+}
 
+function result(formData) {
+    return `
+        <h2>Dados pessoais</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">CPF</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">TELEFONE</th>
+                    <th scope="col">CELULAR</th>
+                    <th scope="col">E-MAIL</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>${formData.cpf}</td>
+                    <td>${formData.nome}</td>
+                    <td>${formData.telefone}</td>
+                    <td>${formData.celular}</td>
+                    <td>${formData.email}</td>
+                </tr>
+            </tbody>
+        </table>
+    `
 }
