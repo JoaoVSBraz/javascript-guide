@@ -30,12 +30,14 @@ section {
 
 h2{
     font: normal bold 20px/20px "Open Sans", sans-serif;
-    padding: 16px;
 }
 
 h3{
     font: normal normal 18px/18px "Open Sans", sans-serif;
-    padding: 16px;
+}
+
+form > *:not(label, input){
+    margin: 16px;
 }
 
 footer {
