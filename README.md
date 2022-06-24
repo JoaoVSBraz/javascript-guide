@@ -6,6 +6,7 @@ This repository is a full guide of my studies about Javascript. Feel free to use
 
 - [A brief history](#a-brief-history)
 - [Operators](#operators)
+- [Type coercion and conversion](#type-coercion-and-conversion)
 - [Variables](#variables)
 
 ## A brief history
@@ -33,6 +34,34 @@ console.log('1' === 1)
 console.log(0 === false)
 // expected output: false
 ```
+
+## Type coercion and conversion
+
+As we talk before, Javascript is a language with dynamic typing. This means that the type of a variable in Javascript changes according to the content received. Type coercion and conversion are operations that exist only because of dynamic typing.
+
+### Type coercion
+
+Sometimes, the javascript tries to guess what your needs are and executes the type coercion, converting one data type into another data type automatically. We see this behavior when we do a sum between a string and a number. See the example below.
+
+```js
+let a = '5'
+let b = 5
+let sum = a + b
+// expected output: 55
+```
+
+### Type conversion
+
+To avoid results like the above-doing operation maths, we can tell Javascript to explicitly convert some data type into another data type. See the same operation below, but this time telling what data types we want.
+
+```js
+let a = '5'
+let b = 5
+let sum = Number(a) + b
+// expected output: 10
+```
+
+As we saw, is fundamental that the data types of math operations be numbers. If you're doing math operations using javascript be sure that the data types you have really are numbers. Otherwise, unexpected results can occur.
 
 ## Variables
 
